@@ -5,10 +5,17 @@
 ## Table of Contents
 1. [Current State of the Game](#current-state-of-the-game)
 2. [Game Overview](#game-overview)
-3. [Gameplay and Rules](#gameplay-and-rules)
-4. [Milestones](#milestones)
-5. [Next in Development](#next-in-development)
-6. [How to Contribute](#how-to-contribute)
+3. [Resources Gathering and Consumption](#resources-gathering-and-consumption)
+4. [Business Trade](#business-trade)
+5. [Ships](#ships)
+6. [Combat](#combat)
+7. [Base](#base)
+8. [Adventures](#adventures)
+9. [Player Interaction](#player-interaction)
+10. [Achievements & Progression](#achievements-&-progression)
+11. [Monetization](#monetization)
+12. [Player Toolbar](#player-toolbar)
+13. [How to Contribute](#how-to-contribute)
 
 ### Current State of the Game
 Trader Odyssey is in its early stages of development. The current build offers:
@@ -17,35 +24,86 @@ Trader Odyssey is in its early stages of development. The current build offers:
 - Backend fetching and updating of player data.
 
 ### Game Overview
-- **World**: Comprises various islands including Tropical, Snowy, Deserted, and Volcanic. Each island type possesses unique resources.
-- **Economy**: Built around three types of markets - Central Market with fixed prices, Island Markets with fluctuating prices, and a Black Market for rare items.
-- **Combat**: Engage in real-time naval battles and maneuver ships with tactics. Equip your ship with advanced cannons, reinforced hulls, and more.
-- **Adventures**: Embark on treasure hunts, battle against ghost ships, explore mystical islands, and face the ferocious sea monsters.
-- **Player Interaction**: Collaborate with other players, form guilds, and enter trade agreements or wars.
+The world of **Trader Odyssey** comprises various islands including Tropical, Snowy, Deserted, and Volcanic. Each island type possesses unique resources and challenges. With an ever-evolving economy, real-time naval battles, adventurous quests, and deep player interaction, your journey through this world will be a captivating odyssey.
 
-### Gameplay and Rules
-- **Resources**: The game revolves around managing and trading resources. They are classified as primary (like Gold, Food), secondary (like Cloth, Gunpowder), and tertiary (like Silver, Exotic Spices).
-- **Trading**: Players can establish trade routes between islands. The profitability of a trade depends on supply and demand. Trade routes can be blocked by adversaries demanding tolls, or be under the threat of pirates and storms.
-- **Naval Combat**: Combat happens in real-time. Damage output and strategy depend on the ship's type, its upgrades, and the player's skills. Players can also board enemy ships for intense close combat.
-- **Player Progression**: Players earn titles based on achievements, unlock new ship designs, gain access to premium resources and markets, and can even command NPC ships.
+### Resources Gathering and Consumption
+#### Primary Resources:
+- **Wood, Stone, Metal**:
+  - Gathering rate: 10-50 units/hr based on the island type.
+  - Consumption: Ships require 2 wood, 1 metal per repair point.
+  - Uses: Building and repairs.
+  
+- **Food**:
+  - Gathering rate: 5-30 units/hr (through fishing or island gathering).
+  - Consumption: 1 food unit per crew member per hour. It depletes faster during voyages.
+  
+#### Secondary Resources:
+- **Cloth**: Crafted using 2 units of food (from cotton farms).
+- **Gunpowder**: Crafted with 1 unit of metal and 1 unit of stone.
+- **Spices**: Can be found on specific islands or acquired through trade.
 
-### Milestones
-- [x] Player authentication and session management.
-- [x] Basic dashboard with resource tracking.
-- [ ] Detailed player profile with achievements and stats.
-- [ ] Real-time multiplayer interaction.
-- [ ] Implementation of the combat system.
-- [ ] Trade mechanics and market dynamics.
-- [ ] Introduction of adventures and quests.
-- [ ] In-game chat and guild functionalities.
-- [ ] Monetization through cosmetic items and premium features.
-- [ ] Mobile optimization and potential app release.
+#### Tertiary Resources (Valuables):
+- Acquired during adventures, trades, or combats.
+- Finding rate: Rare events with a 5% chance during adventures.
 
-### Next in Development
-1. **Trade Mechanics**: Implementing a robust trading system that reflects real-world market dynamics.
-2. **Ship Customization**: Enabling players to personalize and upgrade their ships.
-3. **Island Exploration**: Players will be able to anchor at islands, explore, and gather resources.
-4. **Combat System**: Introducing the foundational mechanics for naval combat.
+### Business Trade
+- **Trade Route Profitability**: Depends on supply and demand. For instance, buy spices at Island A for 10 gold, sell at Island B for 20 gold if B lacks spices.
+- **Blockade Routes**: Players can demand tolls which range between 10-50% of the trade value.
+
+### Ships
+- **Upgrades**:
+  - Enhanced Cannons: Cost - 50 metal, 30 wood.
+  - Faster Sails: Cost - 40 cloth, 20 wood.
+  
+- **Maintenance**: 
+  - Ships degrade over time or when caught in storms.
+  - Degradation rate: Ships lose 1-5% of their integrity per hour based on external conditions.
+
+### Combat
+#### Naval Combat:
+- **Cannon Damage**: Varies by type; standard cannons cause 10 damage, enhanced ones cause 15.
+- **Ship Health**: 
+  - Frigate: 100 HP
+  - Merchant Ship: 120 HP
+  - Battleship: 150 HP
+  - Explorer: 130 HP
+  
+- **Range Advantage**: Long-range cannons cause 80% damage but from a safer distance.
+
+#### Boarding Combat:
+Engage in intense close-quarters combat where the strength of the crew is determined by their food level, morale, and weapons. The outcome of these skirmishes can greatly affect the resources looted or lost.
+
+### Base
+#### Upgrades:
+- Harbor Level 2: Costs 200 wood and 100 stone.
+- Warehouse Level 2: Requires 100 wood, 50 stone, and 50 metal. This upgrade boosts storage capacity by 50%.
+
+### Adventures
+- **Success Rates**:
+  - Treasure Hunts: 60% success, but with a quality map, the chances increase by 10%.
+  - Ghost Ships: 40% success rate but with higher rewards.
+  - Mystical Islands: These rare islands, appearing only 5% of the time, promise triple resources.
+
+### Player Interaction
+- **Trade Agreements**: Set a contract with terms including duration, resource amount, and price. Breaching these contracts results in a loss of reputation points.
+- **Wars**: Declaring wars has its cost in resources but allows for unrestricted combat against rival guilds.
+
+### Achievements & Progression
+- **Titles**: Earn titles based on achievements.
+  - Trader: Complete 100 successful trades.
+  - Warrior: Emerge victorious in 50 battles.
+  
+- **Access**: Certain prestigious markets only open their doors to those with specific titles or achievements.
+
+### Monetization
+- **Cosmetic Items**: These are available for players who want to enhance their visual experience.
+- **Boosts**: 
+  - Speed Boost: Increases ship speed by 20% for 1 hour.
+  - Combat Boost: Amplifies cannon damage by 10% for a single battle.
+
+### Player Toolbar
+- **Compass**: Directs players to a location but comes with a 10-minute cooldown.
+- **Spyglass**: Can be used anytime, but only lasts for a 5-minute duration.
 
 ### How to Contribute
 We're thrilled to have you on board! Here's how you can contribute:
