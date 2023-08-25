@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $stmt = $connection->prepare("SELECT password FROM users WHERE username = ?");
+    $stmt = $connection->prepare("SELECT id, password, gold, doubloons, food, ship_id FROM users WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -15,6 +15,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         if(password_verify($password, $row["password"])) {
             $_SESSION["loggedin"] = true;
             $_SESSION["username"] = $username;
+            $_SESSION["id"] = $row['id'];
+            $_SESSION["gold"] = $row["gold"];
+            $_SESSION["doubloons"] = $row["doubloons"];
+            $_SESSION["food"] = $row["food"];
+            $_SESSION["ship_id"] = $row["ship_id"];
+        
             header("Location: dashboard.php");
         } else {
             echo "Invalid password!";
