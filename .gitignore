@@ -1,0 +1,5 @@
+# Database connection
+dbconnect.php
+
+# VS Code configurations
+.vscode/
